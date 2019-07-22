@@ -1,6 +1,6 @@
 'use strict'
 const url = require('url')
-const Fic = require('./fic.js')
+let Fic
 
 class Site {
   constructor () {
@@ -89,3 +89,5 @@ Site.create = function SiteCreate (engine) {
 }
 
 module.exports = Site
+
+Fic = require('./fic.js')
