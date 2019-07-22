@@ -1,7 +1,7 @@
 'use strict'
 const url = require('url')
 const validate = require('aproba')
-const Site = require('./site.js')
+let Site
 
 function num (val) {
   if (val == null) return val
@@ -262,3 +262,5 @@ class Fic {
 }
 
 module.exports = Fic
+
+Site = require('./site.js')
