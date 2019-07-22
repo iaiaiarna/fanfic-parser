@@ -5,7 +5,6 @@ const qr = require('@perl/qr')
 const qw = require('@perl/qw')
 const Site = require('../site.js')
 const Scan = require('../scan.js')
-const unixTime = require('../unix-time.js')
 
 const mNum = qr`[\d,]+`
 const mGenre = qr.join('|', qw`
